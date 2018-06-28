@@ -12,8 +12,9 @@ public class TaskMedium implements Callable<String> {
 
     @Override
     public String call() throws Exception{
+        System.out.println("Start - " + message);
         Thread.sleep(5000);
-        System.out.println(message);
+        System.out.println("End - " + message);
         return message;
     }
 
