@@ -33,7 +33,7 @@ public class Main {
     }
 
     /**
-     * Методы выполнятся последовательно
+     * Задачи выполнятся последовательно
      */
     public static void sequentialExecution(){
         System.out.println("\tStart method: sequentialExecution\n");
@@ -47,8 +47,8 @@ public class Main {
     }
 
     /**
-     * Методы выполнятся асинхронно.
-     * Запуск методов произойдет последовательно, но они будут выполнены асинхронно (словно параллельно)
+     * Задачи выполнятся асинхронно.
+     * Запуск задач произойдет последовательно, но они будут выполнены асинхронно
      */
     public static void asyncExecution(){
         System.out.println("\tStart method: asyncExecution\n");
@@ -66,7 +66,7 @@ public class Main {
     }
 
     /**
-     * Методы запустятся и выполнятся асинхронно, но вернут результат в последовательности вызова метода get
+     * Задачи запустятся и выполнятся асинхронно, но вернут результат в последовательности вызова метода get
      */
     public static void asyncExecutionUsingGetMethod(){
         System.out.println("\tStart method: asyncExecutionUsingGetMethod\n");
