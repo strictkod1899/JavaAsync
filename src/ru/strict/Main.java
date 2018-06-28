@@ -53,10 +53,10 @@ public class Main {
 
         ExecutorService pool = Executors.newFixedThreadPool(3);
         // Завершит выполнение третьим
-        pool.execute(taskLong);
+        pool.submit(taskLong);
         // Завершит выполнение вторым
-        pool.execute(taskMedium);
+        pool.submit(taskMedium);
         // Завершит выполнение первым
-        pool.execute(taskShort);
+        pool.submit(taskShort);
     }
 }
